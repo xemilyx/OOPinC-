@@ -13,6 +13,9 @@ namespace DrinksMachinesDemo
             Console.WriteLine(myMachine.Location);
             Console.WriteLine(myMachine.Make);
             Console.WriteLine(myMachine.Model);
+
+            Console.WriteLine(Math.Pow(2, 8)); 
+            Console.WriteLine(Math.Pow(2, 10));
         }
     }
 
