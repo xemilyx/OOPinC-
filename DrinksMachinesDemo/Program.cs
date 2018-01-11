@@ -6,16 +6,25 @@ namespace DrinksMachinesDemo
     {
         public static void Main(string[] args)
         {
-            DrinksMachine myMachine = new DrinksMachine();
-            myMachine.Location = "kitchen";
-            myMachine.Model = "DM1000";
+            DrinksMachine myMachine = new DrinksMachine("Kitchen", "Brand", "DM1000");
+            //myMachine.Location = "kitchen";
+            //myMachine.Model = "DM1000";
 
             Console.WriteLine(myMachine.Location);
+            Console.WriteLine(myMachine.Make);
+            Console.WriteLine(myMachine.Model);
         }
     }
 
     class DrinksMachine
     {
+        public DrinksMachine(string loc, string make, string model)
+        {
+            this.Location = loc;
+            this.Make = make;
+            this.Model = model;
+        }
+
         private string make;
         private string model;
         private string location;
